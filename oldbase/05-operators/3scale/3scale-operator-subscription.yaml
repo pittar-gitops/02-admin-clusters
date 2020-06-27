@@ -1,0 +1,68 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  creationTimestamp: "2020-05-09T01:27:13Z"
+  generation: 1
+  name: 3scale-operator
+  namespace: 3scale
+  resourceVersion: "174686"
+  selfLink: /apis/operators.coreos.com/v1alpha1/namespaces/3scale/subscriptions/3scale-operator
+  uid: 7142d704-bd9d-4499-939e-6701a3e89a1d
+spec:
+  channel: threescale-2.8
+  installPlanApproval: Automatic
+  name: 3scale-operator
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: 3scale-operator.v0.5.2
+status:
+  catalogHealth:
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: certified-operators
+      namespace: openshift-marketplace
+      resourceVersion: "170335"
+      uid: e1e2b6c9-78c9-4ff3-9649-92c25bf7a90e
+    healthy: true
+    lastUpdated: "2020-05-09T01:27:13Z"
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: community-operators
+      namespace: openshift-marketplace
+      resourceVersion: "170780"
+      uid: e1f65833-242f-4590-b8fe-d8d913f82dae
+    healthy: true
+    lastUpdated: "2020-05-09T01:27:13Z"
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: redhat-operators
+      namespace: openshift-marketplace
+      resourceVersion: "169714"
+      uid: b15b7d58-246d-4248-b088-bf0fa20d2cbf
+    healthy: true
+    lastUpdated: "2020-05-09T01:27:13Z"
+  conditions:
+  - lastTransitionTime: "2020-05-09T01:27:13Z"
+    message: all available catalogsources are healthy
+    reason: AllCatalogSourcesHealthy
+    status: "False"
+    type: CatalogSourcesUnhealthy
+  currentCSV: 3scale-operator.v0.5.2
+  installPlanRef:
+    apiVersion: operators.coreos.com/v1alpha1
+    kind: InstallPlan
+    name: install-hh2bz
+    namespace: 3scale
+    resourceVersion: "174579"
+    uid: 91938d4b-cbac-417b-baef-f664713f5dbd
+  installedCSV: 3scale-operator.v0.5.2
+  installplan:
+    apiVersion: operators.coreos.com/v1alpha1
+    kind: InstallPlan
+    name: install-hh2bz
+    uuid: 91938d4b-cbac-417b-baef-f664713f5dbd
+  lastUpdated: "2020-05-09T01:27:18Z"
+  state: AtLatestKnown

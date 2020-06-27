@@ -1,0 +1,2 @@
+envs/overlays/cluster-nonprod/sealed-secrets-secret.yaml
+envs/overlays/cluster-prod/sealed-secrets-secret.yaml

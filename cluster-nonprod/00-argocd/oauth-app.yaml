@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config-nonprod
   source:
-    path: cluster-nonprod/03-oauth
+    path: cluster-nonprod/01-oauth
     repoURL: https://github.com/pittar-gitops/clusters.git
     targetRevision: cluster-nonprod
   syncPolicy:

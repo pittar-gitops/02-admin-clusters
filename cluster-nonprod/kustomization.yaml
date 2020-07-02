@@ -1,8 +1,6 @@
 # Copy your sealed-secrets-secert into this dir before running apply -k
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+nameSuffix: -nonprod
 bases:
-- ../../base
-resources:
-- sealed-secrets-namespace.yaml
-- sealed-secrets-secret.yaml
+  - ../../../base/00-argocd/00-cluster-config-project.yaml

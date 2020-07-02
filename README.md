@@ -1,8 +1,8 @@
 # Admin Cluster Configuration
 
-## Branches
+## Directories
 
-* `master`: Working branch for configutation and initial Kustomize overlays.
+* `base`: Common manifests and structure for each cluster.
 * `cluster-nonprod`: Non-prod cluster config.
 * `cluster-prod`: Production cluster config.
 

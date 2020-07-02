@@ -2,8 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "6"
-  name: cluster-roles-and-bindings-nonprod
+    argocd.argoproj.io/sync-wave: "4"
+  name: oauth-nonprod
   namespace: argocd
 spec:
   destination:
@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config-nonprod
   source:
-    path: overlays/06-cluster-roles-and-bindings
-    repoURL: https://github.com/pittar-gitops/01-admin-cluster-config.git
+    path: cluster-nonprod/oauth
+    repoURL: https://github.com/pittar-gitops/clusters.git
     targetRevision: cluster-nonprod
   syncPolicy:
     automated:

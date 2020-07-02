@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
-- ../../base/01-groups-and-membership
+- ../../base/02-groups-roles-bindings
 patchesJson6902:
 - target:
     group: user.openshift.io

@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: cluster-nonprod/01-groups-and-membership
+    path: cluster-nonprod/01-groups-roles-bindings
     repoURL: https://github.com/pittar-gitops/clusters.git
     targetRevision: master
   syncPolicy:

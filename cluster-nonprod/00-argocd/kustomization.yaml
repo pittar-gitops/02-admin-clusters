@@ -4,5 +4,6 @@ nameSuffix: -nonprod
 resources:
   - oauth-app.yaml
   - groups-and-membership-app.yaml
+  - cluster-roles-and-bindings-app.yaml
 bases:
   - ../../base/00-argocd

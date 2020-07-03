@@ -1,9 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
-  name: groups-and-membership
+  name: operators
   namespace: argocd
 spec:
   destination:
@@ -11,10 +9,10 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: overlays/nonprod/01-groups-and-membership
+    path: cluster-nonprod/03-operators
     repoURL: https://github.com/pittar-gitops/clusters.git
-    targetRevision: cluster-nonprod
+    targetRevision: master
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true

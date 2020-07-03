@@ -9,10 +9,10 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: overlays/05-operators
-    repoURL: https://github.com/pittar-gitops/01-admin-cluster-config.git
+    path: cluster-nonprod/03-operators
+    repoURL: https://github.com/pittar-gitops/clusters.git
     targetRevision: master
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true

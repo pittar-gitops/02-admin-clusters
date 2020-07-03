@@ -3,5 +3,6 @@ kind: Kustomization
 resources:
   - oauth-app.yaml
   - groups-roles-bindings-app.yaml
+  - operators-app.yaml
 bases:
   - ../../base/00-argocd

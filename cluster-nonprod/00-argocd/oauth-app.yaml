@@ -3,17 +3,17 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "4"
-  name: oauth-nonprod
+  name: oauth
   namespace: argocd
 spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: cluster-config-nonprod
+  project: cluster-config
   source:
     path: cluster-nonprod/01-oauth
     repoURL: https://github.com/pittar-gitops/clusters.git
-    targetRevision: cluster-nonprod
+    targetRevision: master
   syncPolicy:
     automated:
       prune: false

@@ -1,4 +1,4 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
-resources:
-  - container-security-operator-subscription.yaml
+bases:
+  - https://github.com/redhat-canada-gitops/cluster-config/manifests/container-security-operator/base

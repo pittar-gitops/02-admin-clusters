@@ -16,9 +16,9 @@ patchesJson6902:
       kind: KeycloakClient
       name: openshift-client
     path: patch-redirect-uri.yaml
-  - target:
-      group: config.openshift.io
-      version: v1
-      kind: OAuth
-      name: cluster
-    path: patch-issuer.yaml
+#  - target:
+#      group: config.openshift.io
+#      version: v1
+#      kind: OAuth
+#      name: cluster
+#    path: patch-issuer.yaml

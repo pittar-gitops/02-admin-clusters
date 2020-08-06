@@ -3,4 +3,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 bases:
   - ../../base/04-operators/container-security
   - ../../base/04-operators/openshift-pipelines
+  - ../../base/04-operators/rhsso
 #  - ../../base/03-operators/codeready-workspaces

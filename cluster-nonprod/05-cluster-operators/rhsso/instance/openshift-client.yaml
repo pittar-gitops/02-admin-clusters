@@ -18,5 +18,5 @@ spec:
     implicitFlowEnabled: false
     directAccessGrantsEnabled: true
     redirectUris: 
-        - "https://keycloak-sso.apps.ocp.aws.pitt.ca/auth/realms/openshift"
+        - "https://oauth-openshift.apps.ocp.aws.pitt.ca/oauth2callback/rhsso"
      

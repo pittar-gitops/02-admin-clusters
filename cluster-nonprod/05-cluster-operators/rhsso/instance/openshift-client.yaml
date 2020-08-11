@@ -18,5 +18,5 @@ spec:
     implicitFlowEnabled: false
     directAccessGrantsEnabled: true
     redirectUris: 
-        - "https://oauth-openshift.apps.ocp.aws.pitt.ca/oauth2callback/rhsso"
+        - "https://oauth-openshift.apps.ocp-dev.aws.pitt.ca/oauth2callback/rhsso"
      

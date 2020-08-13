@@ -18,5 +18,5 @@ spec:
     implicitFlowEnabled: false
     directAccessGrantsEnabled: true
     redirectUris: 
-        - "https://keycloak.example.com/auth/realms/master/protocol/openid-connect/token"
+        - "https://oauth-openshift.apps.ocp-dev.aws.pitt.ca/oauth2callback/rhsso"
      

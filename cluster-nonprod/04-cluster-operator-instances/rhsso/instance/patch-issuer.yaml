@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/identityProviders/0/openID/issuer
-  value: https://keycloak-sso.apps.cluster-3dcd.3dcd.example.opentlc.com/auth/realms/openshift

@@ -1,0 +1,9 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+namespace: sso
+bases:
+  - https://github.com/redhat-canada-gitops/catalog/rhsso/rhsso-instance/overlays/default?ref=master
+
+resources:
+  - openshift-realm.yaml
+  - openshift-client.yaml

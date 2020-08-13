@@ -1,0 +1,11 @@
+# This is meant to be a base.  It should be referenced from an overlay Kustomization file.
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+# Remote base.  Use the configuration from the Red Hat Canada GitOps repo (unofficial).
+bases:
+  - github.com/redhat-canada-gitops/01-cluster-config/manifests/sealed-secrets/base?ref=updates-sealedsecrets
+
+# Include the anyuid role so the Sealed Secrets controller can run as a specific User ID.
+resources:
+  - role-anyuid.yaml

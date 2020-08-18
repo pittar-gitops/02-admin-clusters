@@ -1,0 +1,16 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+# List of base Operator configurations.  These are the operators themselves.
+bases:
+  - ../../../base/03-operators/rhsso
+
+# Patch the redirect URI.
+patchesJson6902:
+  - target:
+      group: batch
+      version: v1
+      kind: Job
+      name: installplan-approver
+      namespace: sso
+    path: patch-job-env-vars.yaml

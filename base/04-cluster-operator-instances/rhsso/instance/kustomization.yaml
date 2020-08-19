@@ -6,4 +6,3 @@ bases:
 
 resources:
   - openshift-realm.yaml
-#  - openshift-client.yaml

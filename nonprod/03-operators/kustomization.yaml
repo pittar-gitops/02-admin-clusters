@@ -3,7 +3,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 
 # List of base Operator configurations.  These are the operators themselves.
 bases:
-  - ../../base/03-operators/container-security
+  - github.com/redhat-canada-gitops/catalog/container-security-operator/base?ref=unify
   - ../../base/03-operators/openshift-pipelines
   - rhsso
 #  - ../../base/03-operators/codeready-workspaces

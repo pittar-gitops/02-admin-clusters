@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: wait-for-crds
+spec:
+  template:
+    spec:
+      containers:
+        - image: registry.redhat.io/openshift4/ose-cli:v4.4
+          command:
+            - /bin/bash
+            - -c
+            - |
+
+              echo "Sleep $SLEEP seconds, giving the operators enough time to deploy CRDs to the cluster."
+              sleep $SLEEP
+          imagePullPolicy: Always
+          name: wait-for-crds
+          env:
+          - name: SLEEP
+            value: "20"
+      dnsPolicy: ClusterFirst
+      restartPolicy: OnFailure
+      serviceAccount: default
+      serviceAccountName: default
+      terminationGracePeriodSeconds: 30

@@ -7,3 +7,6 @@ bases:
   - ../../base/03-operators/openshift-pipelines
   - rhsso
 #  - ../../base/03-operators/codeready-workspaces
+
+resourxes:
+  - wait-for-crds.yaml

@@ -9,4 +9,4 @@ bases:
 #  - ../../base/03-operators/codeready-workspaces
 
 resources:
-  - wait-for-crds.yaml
+  - wait-for-crds-job.yaml

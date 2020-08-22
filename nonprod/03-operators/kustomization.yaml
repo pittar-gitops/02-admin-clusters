@@ -8,5 +8,5 @@ bases:
   - rhsso
 #  - ../../base/03-operators/codeready-workspaces
 
-resourxes:
+resources:
   - wait-for-crds.yaml

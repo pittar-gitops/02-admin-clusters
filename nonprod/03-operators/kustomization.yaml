@@ -6,4 +6,5 @@ bases:
   - github.com/redhat-canada-gitops/catalog/container-security-operator/base
   - github.com/redhat-canada-gitops/catalog/pipelines-operator/base
   - rhsso
+  - wait-job
 #  - ../../base/03-operators/codeready-workspaces

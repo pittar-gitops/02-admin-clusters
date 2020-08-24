@@ -6,7 +6,8 @@ bases:
   - github.com/redhat-canada-gitops/catalog/container-security-operator/base?ref=unify
   - ../../base/03-operators/openshift-pipelines
   - rhsso
+  - wait-job
 #  - ../../base/03-operators/codeready-workspaces
 
-resources:
-  - wait-for-crds-job.yaml
+#resources:
+#  - wait-for-crds-job.yaml

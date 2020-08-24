@@ -6,7 +6,7 @@ bases:
   - github.com/redhat-canada-gitops/catalog/container-security-operator/base
   - ../../base/03-operators/openshift-pipelines
   - rhsso
-  - wait-job
+#  - wait-job
 #  - ../../base/03-operators/codeready-workspaces
 
 #resources:

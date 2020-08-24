@@ -18,7 +18,7 @@ spec:
           name: wait-for-crds
           env:
           - name: SLEEP
-            value: "120"
+            value: "240"
       dnsPolicy: ClusterFirst
       restartPolicy: OnFailure
       serviceAccount: default

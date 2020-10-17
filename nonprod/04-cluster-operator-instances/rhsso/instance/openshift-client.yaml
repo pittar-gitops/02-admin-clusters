@@ -20,5 +20,5 @@ spec:
     implicitFlowEnabled: false
     directAccessGrantsEnabled: true
     redirectUris: 
-        - "https://oauth-openshift.apps.cluster-df3f.df3f.example.opentlc.com/oauth2callback/rhsso"
+        - "https://oauth-openshift.apps.cluster-598b.598b.example.opentlc.com/oauth2callback/rhsso"
      

@@ -35,4 +35,4 @@
         email: 
         - custom_email_claim
         - email
-      issuer: https://keycloak-sso.apps.cluster-1fab.1fab.example.opentlc.com/auth/realms/openshift
+      issuer: https://keycloak-sso.apps.cluster-943d.943d.example.opentlc.com/auth/realms/openshift
